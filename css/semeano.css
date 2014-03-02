@@ -84,6 +84,18 @@ h1
 {
     margin-top: 50px;
     display: inline-block;
+    font-size: 3em;
+}
+
+.contacts a
+{
+    color: #888;
+    transition: color ease 0.3s;
+}
+
+.contacts a:hover
+{
+    color: #444;
 }
 
 .contact
@@ -92,12 +104,6 @@ h1
     float: left;
 	margin: 8px;
 	cursor: pointer;
-}
-
-.contact img
-{
-	width: auto;
-	height: 50px;
 }
 
 
@@ -289,13 +295,13 @@ h1
         display: inline-block;
     }
     
+    .contacts
+    {
+        font-size: 2em;
+    }
+    
     .contact
     {
         margin: 7px;
-    }
-    
-    .contact img
-    {
-        height: 38px;
     }
 }
