@@ -153,7 +153,48 @@ h1
     }
 }
 
-@media screen and (min-width: 681px) and (max-width: 1024px)
+@media screen and (min-width: 800px) and (max-width: 1024px)
+{
+    h1
+    {
+	   font-size: 2.3em;
+    }
+    
+    .section
+    {
+        width: 760px;
+        height: 280px;
+        margin-top: -150px;     /* removed 10px to set it a little higher */
+        margin-left: -375px;
+    }
+    
+    .photo img
+    {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .text
+    {
+        width: 420px;
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+    
+    .title
+    {
+        width: 425px;
+        margin-top: 0px;
+    }
+    
+    .description
+    {
+        width: 403px;
+        font-size: 1.05em;
+    }
+}
+
+@media screen and (min-width: 681px) and (max-width: 799px)
 {
     h1
     {
