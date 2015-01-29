@@ -114,6 +114,12 @@ h1
     fill: currentColor;
 }
 
+.icon-ghost
+{
+		width: 40px;
+		height: 40px;
+}
+
 
 
 /*
@@ -360,5 +366,11 @@ h1
 		    width: 38px;
 		    display: inline-block;
 		    fill: currentColor;
+		}
+
+		.icon-ghost
+		{
+				width: 30px;
+				height: 30px;
 		}
 }
