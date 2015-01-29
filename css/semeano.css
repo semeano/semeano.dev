@@ -100,10 +100,18 @@ h1
 
 .contact
 {
-	display: table;
-    float: left;
-	margin: 8px;
-	cursor: pointer;
+		display: table;
+	  float: left;
+		margin: 8px;
+		cursor: pointer;
+}
+
+[class^="icon-"], [class*=" icon-"]
+{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    fill: currentColor;
 }
 
 
@@ -345,4 +353,12 @@ h1
     {
         margin: 7px;
     }
+
+    [class^="icon-"], [class*=" icon-"]
+    {
+		    height: 38px;
+		    width: 38px;
+		    display: inline-block;
+		    fill: currentColor;
+		}
 }
