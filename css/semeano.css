@@ -357,7 +357,7 @@ h1
     [class^="icon-"], [class*=" icon-"]
     {
 		    height: 32px;
-		    width: auto;
+		    width: 32px;
 		    display: inline-block;
 		    fill: currentColor;
 		}
