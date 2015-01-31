@@ -223,6 +223,12 @@ h1
     {
         float: none;
     }
+
+    .photo img
+    {
+        width: 360px;
+        height: 360px;
+    }
     
     .text
     {
