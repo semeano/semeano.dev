@@ -5,36 +5,48 @@
 
 @font-face
 {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: lighter;
-	src: local('Open Sans Light'), local('OpenSans-Light'), url(../font/semeano.woff) format('woff');
+		font-family: 'Open Sans';
+		font-style: normal;
+		font-weight: lighter;
+		src: local('Open Sans Light'), local('OpenSans-Light'), url(../font/semeano.woff) format('woff');
 }
 
 body
 {
-	font-family: 'Open Sans', sans-serif;
-	font-size: 100%;
-	background-color: #eee;
-	margin: 0;
-	color: #665;
-	opacity: 0;
-	transition: opacity 1s;
+		font-family: 'Open Sans', sans-serif;
+		font-size: 100%;
+		background-color: #eee;
+		margin: 0;
+		color: #665;
+		opacity: 0;
+		transition: opacity 1s;
 }
 
 h1
 {
-	font-size: 3.5em;
-	font-weight: lighter;
-	letter-spacing: -1px;
-	line-height: 1.2em;
-	margin: 0;
-	cursor: default;
+		font-size: 3em;
+		font-weight: lighter;
+		letter-spacing: -1px;
+		line-height: 1.1em;
+		margin: 0;
+		cursor: default;
+}
+
+h2
+{
+		font-size: 1.4em;
+    line-height: 1em;
+}
+
+h3
+{
+		font-size: 1em;
+    line-height: 1em;
 }
 
 ::selection
 {
-	background-color: #eee;
+		background-color: #eee;
 }
 
 .section
@@ -55,27 +67,24 @@ h1
 
 .text
 {
-	float: left;
-	width: 530px;
-	margin-top: 30px;
-	margin-left: 100px;
-    text-align: center;
+		float: left;
+		width: 530px;
+		margin-top: 30px;
+		margin-left: 100px;
+		text-align: center;
 }
 
 .title
 {
-    width: 530px;
-    margin-top: 20px;
-	line-height: 1.2em;
-    display: inline-block;
-    text-align: left;
+		width: 530px;
+		margin-top: 20px;
+		display: inline-block;
+		text-align: left;
 }
 
 .description
 {
     width: 530px;
-    font-size: 1.4em;
-    line-height: 1.4em;
     text-align: left;
     margin-top: 20px;
 }
@@ -125,7 +134,18 @@ h1
 {
     h1
     {
-	   font-size: 2.5em;
+	  		font-size: 2.2em;
+				line-height: 1.2em;
+    }
+
+    h2
+    {
+	  		font-size: 1.2em;
+    }
+
+    h3
+    {
+	  		font-size: 0.9em;
     }
     
     .section
@@ -153,19 +173,23 @@ h1
     {
         width: 450px;
     }
-    
-    .description
-    {
-        width: 403px;
-        font-size: 1.05em;
-    }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px)
 {
     h1
     {
-	   font-size: 2.3em;
+	  		font-size: 2.1em;
+    }
+
+    h2
+    {
+	  		font-size: 1.1em;
+    }
+
+    h3
+    {
+	  		font-size: 0.9em;
     }
     
     .section
@@ -198,7 +222,6 @@ h1
     .description
     {
         width: 403px;
-        font-size: 1.05em;
     }
 }
 
@@ -206,7 +229,20 @@ h1
 {
     h1
     {
-	   font-size: 2.7em;
+	  		font-size: 2.4em;
+    }
+
+    h2
+    {
+	  		font-size: 1.4em;
+	  		margin-top: 1em;
+	  		text-align: center;
+    }
+
+    h3
+    {
+	  		font-size: 1em;
+	  		text-align: center;
     }
     
     .section
@@ -238,8 +274,7 @@ h1
     
     .description
     {
-        width: 445px;
-        font-size: 1.2em;
+        width: 480px;
         display: inline-block;
     }
 }
@@ -248,7 +283,20 @@ h1
 {
     h1
     {
-	   font-size: 2.4em;
+	  		font-size: 2.4em;
+    }
+
+    h2
+    {
+	  		font-size: 1.1em;
+	  		margin-top: 1em;
+	  		text-align: center;
+    }
+
+    h3
+    {
+	  		font-size: 0.8em;
+	  		text-align: center;
     }
     
     .section
@@ -287,7 +335,6 @@ h1
     .description
     {
         width: 360px;
-        font-size: 0.95em;
         display: inline-block;
     }
     
@@ -301,7 +348,7 @@ h1
 {
     h1
     {
-	   font-size: 2.2em;
+	  		font-size: 2.2em;
     }
     
     .section
