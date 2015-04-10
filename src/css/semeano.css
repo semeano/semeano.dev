@@ -18,7 +18,7 @@ body
 		background-color: #eee;
 		margin: 0;
 		color: #665;
-		opacity: 0;
+		opacity: 1 !important;
 		transition: opacity 1s;
 }
 
@@ -63,6 +63,11 @@ h3
 .photo
 {
 	float: left;
+}
+
+.photo img
+{
+		content: url("../img/me.png");
 }
 
 .text
@@ -157,8 +162,7 @@ h3
     
     .photo img
     {
-        width: 380px;
-        height: 380px;
+				content: url("../img/me380.png");
     }
     
     .text
@@ -201,8 +205,7 @@ h3
     
     .photo img
     {
-        width: 280px;
-        height: 280px;
+				content: url("../img/me280.png");
     }
     
     .text
@@ -315,8 +318,7 @@ h3
     
     .photo img
     {
-        width: 280px;
-        height: 280px;
+				content: url("../img/me280.png");
     }
     
     .text
@@ -367,8 +369,7 @@ h3
     
     .photo img
     {
-        width: 200px;
-        height: 200px;
+				content: url("../img/me200.png");
     }
     
     .text

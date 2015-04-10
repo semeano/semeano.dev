@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+		<title>semeano</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" /> 
+
+</head>
+
+<body style="opacity:0">
+
+		<div class="section">
+	        
+	        <div class="photo">
+	            <img />
+	        </div>
+	        
+	        <div class="text">
+	        
+	            <div class="title">
+	                <h1>My name is Semeano and I'm a full-stack web developer.</h1>
+	            </div>
+	            
+	            <div class="description">
+	                <h2>I have an obsession for details and simplicity.</h2>
+	                <br>
+	                <h3>Contact me if you need a complete solution for your business.</h3>
+	            </div>
+	            
+	            <div class="contacts">
+	                <div class="contact">
+	                    <a href="mailto:semeano@gmail.com" target="_blank">
+	                        <svg class="icon-email"><use xlink:href="svg/icons.svg#icon-email"></use></svg>
+	                    </a>
+	                </div>
+	                <div class="contact">
+	                    <a href="http://twitter.com/semeano" target="_blank">
+	                        <svg class="icon-twitter"><use xlink:href="svg/icons.svg#icon-twitter"></use></svg>
+	                    </a>
+	                </div>
+	                <div class="contact">
+	                    <a href="http://github.com/semeano" target="_blank">
+	                        <svg class="icon-github"><use xlink:href="svg/icons.svg#icon-github"></use></svg>
+	                    </a>
+	                </div>
+	                <div class="contact">
+	                    <a href="http://sumry.in/semeano" target="_blank">
+	                        <svg class="icon-sumry"><use xlink:href="svg/icons.svg#icon-sumry"></use></svg>
+	                    </a>
+	                </div>
+	                <div class="contact">
+	                    <a href="http://www.linkedin.com/in/semeano" target="_blank">
+	                        <svg class="icon-linkedin"><use xlink:href="svg/icons.svg#icon-linkedin"></use></svg>
+	                    </a>
+	                </div>
+	                <div class="contact">
+	                    <a href="http://blog.semeano.me" target="_self">
+	                        <svg class="icon-ghost"><use xlink:href="svg/icons.svg#icon-ghost"></use></svg>
+	                    </a>
+	                </div>
+	            </div>
+	            
+	        </div>
+		</div>
+
+		<script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'css/semeano.min.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+
+</body>
+
+</html>
