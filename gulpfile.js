@@ -5,14 +5,14 @@ var del = require('del'),
 	concatcss = require('gulp-concat-css'),
 	uglify = require('gulp-uglify'),
 	concat = require('gulp-concat'),
-	jshint = require('gulp-jshint'),
+	// jshint = require('gulp-jshint'),
 	imagemin = require('gulp-imagemin'),
 	// useref = require('gulp-useref'),
 	minifyhtml = require('gulp-minify-html');
 
 
 // Clear dist
-gulp.task('clear-dist', function () {
+gulp.task('clear', function () {
 	return del.sync('dist');
 });
 
@@ -73,7 +73,7 @@ gulp.task('copy', function () {
 });
 
 // Default task
-gulp.task('default', ['clear-dist', 'fonts', 'css', 'js', 'img', 'svg', 'html', 'copy'], function () {
+gulp.task('default', ['clear', 'fonts', 'css', 'js', 'img', 'svg', 'html', 'copy'], function () {
 	// Clear temp folder	
 	return del.sync('temp');
 });
