@@ -68,7 +68,7 @@ gulp.task('html', function () {
 
 // Copy other files
 gulp.task('copy', function () {
-	return gulp.src(['src/favicon.ico', 'src/terms.pdf', 'src/robots.txt', 'src/sitemap.xml'])
+	return gulp.src(['src/favicon.ico', 'src/terms.pdf', 'src/robots.txt', 'src/sitemap.xml', 'src/sitemap.www.xml'])
 		.pipe(gulp.dest('dist'));
 });
 
