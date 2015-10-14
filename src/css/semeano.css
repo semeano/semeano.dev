@@ -5,132 +5,132 @@
 
 @font-face
 {
-		font-family: 'Open Sans';
-		font-style: normal;
-		font-weight: lighter;
-		src: local('Open Sans Light'), local('OpenSans-Light'), url(../font/semeano.woff) format('woff');
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: lighter;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url(../font/semeano.woff) format('woff');
 }
 
 body
 {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 100%;
-		background-color: #eee;
-		margin: 0;
-		color: #665;
-		opacity: 1 !important;
-		transition: opacity 1s;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 100%;
+	background-color: #eee;
+	margin: 0;
+	color: #665;
+	opacity: 1 !important;
+	transition: opacity 1s;
 }
 
 h1
 {
-		font-size: 3em;
-		font-weight: lighter;
-		letter-spacing: -1px;
-		line-height: 1.1em;
-		margin: 0;
-		cursor: default;
+	font-size: 3em;
+	font-weight: lighter;
+	letter-spacing: -1px;
+	line-height: 1.1em;
+	margin: 0;
+	cursor: default;
 }
 
 h2
 {
-		font-size: 1.4em;
-    line-height: 1em;
+	font-size: 1.4em;
+	line-height: 1em;
 }
 
 h3
 {
-		font-size: 1em;
-    line-height: 1em;
+	font-size: 1em;
+	line-height: 1em;
 }
 
 a
 {
-		color: #665;
-		font-weight: bold;
+	color: #665;
+	font-weight: bold;
 }
 
 ::selection
 {
-		background-color: #eee;
+	background-color: #eee;
 }
 
 .section
 {
-    width: 1110px;
-    height: 480px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -260px;     /* removed 20px to set it a little higher */
-    margin-left: -555px;
+	width: 1110px;
+	height: 480px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -260px;     /* removed 20px to set it a little higher */
+	margin-left: -555px;
 }
 
 .photo
 {
 	float: left;
-}
-
-.photo img
-{
-		content: url("../img/me.png");
+	width: 480px;
+	height: 480px;
+	background-image: url("../img/me.png");
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .text
 {
-		float: left;
-		width: 530px;
-		margin-top: 30px;
-		margin-left: 100px;
+	float: left;
+	width: 530px;
+	margin-top: 30px;
+	margin-left: 100px;
 }
 
 .title
 {
-		width: 530px;
-		margin-top: 20px;
-		display: inline-block;
-		text-align: left;
+	width: 530px;
+	margin-top: 20px;
+	display: inline-block;
+	text-align: left;
 }
 
 .description
 {
-    width: 530px;
-    text-align: left;
-    margin-top: 20px;
+	width: 530px;
+	text-align: left;
+	margin-top: 20px;
 }
 
 .contacts
 {
-    margin-top: 50px;
-    display: inline-block;
-    font-size: 3em;
+	margin-top: 50px;
+	display: inline-block;
+	font-size: 3em;
 }
 
 .contacts a
 {
-    color: #888;
-    transition: color ease 0.3s;
+	color: #888;
+	transition: color ease 0.3s;
 }
 
 .contacts a:hover
 {
-    color: #444;
+	color: #444;
 }
 
 .contact
 {
-		display: table;
-	  float: left;
-		margin: 8px;
-		cursor: pointer;
+	display: table;
+	float: left;
+	margin: 8px;
+	cursor: pointer;
 }
 
 [class^="icon-"], [class*=" icon-"]
 {
-    height: 50px;
-    width: 50px;
-    display: inline-block;
-    fill: currentColor;
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+	fill: currentColor;
 }
 
 
@@ -142,276 +142,277 @@ a
 
 @media screen and (min-width: 1025px) and (max-width: 1280px)
 {
-    h1
-    {
-	  		font-size: 2.2em;
-				line-height: 1.2em;
-    }
+	h1
+	{
+		font-size: 2.2em;
+		line-height: 1.2em;
+	}
 
-    h2
-    {
-	  		font-size: 1.2em;
-    }
+	h2
+	{
+		font-size: 1.2em;
+	}
 
-    h3
-    {
-	  		font-size: 0.9em;
-    }
-    
-    .section
-    {
-        width: 890px;
-        height: 380px;
-        margin-top: -210px;     /* removed 20px to set it a little higher */
-        margin-left: -445px;
-    }
-    
-    .photo img
-    {
-				content: url("../img/me380.png");
-    }
-    
-    .text
-    {
-        width: 450px;
-        margin-top: 20px;
-        margin-left: 60px;
-    }
-    
-    .title
-    {
-        width: 450px;
-    }
+	h3
+	{
+		font-size: 0.9em;
+	}
+
+	.section
+	{
+		width: 890px;
+		height: 380px;
+		margin-top: -210px;     /* removed 20px to set it a little higher */
+		margin-left: -445px;
+	}
+
+	.photo
+	{
+		width: 380px;
+		height: 380px;
+		background-image: url("../img/me380.png");
+	}
+
+	.text
+	{
+		width: 450px;
+		margin-top: 20px;
+		margin-left: 60px;
+	}
+
+	.title
+	{
+		width: 450px;
+	}
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px)
 {
-    h1
-    {
-	  		font-size: 2.1em;
-    }
+	h1
+	{
+		font-size: 2.1em;
+	}
 
-    h2
-    {
-	  		font-size: 1.1em;
-    }
+	h2
+	{
+		font-size: 1.1em;
+	}
 
-    h3
-    {
-	  		font-size: 0.9em;
-    }
-    
-    .section
-    {
-        width: 760px;
-        height: 280px;
-        margin-top: -150px;     /* removed 10px to set it a little higher */
-        margin-left: -375px;
-    }
-    
-    .photo img
-    {
-				content: url("../img/me280.png");
-    }
-    
-    .text
-    {
-        width: 420px;
-        margin-top: 0px;
-        margin-left: 50px;
-    }
-    
-    .title
-    {
-        width: 425px;
-        margin-top: 0px;
-    }
-    
-    .description
-    {
-        width: 403px;
-    }
+	h3
+	{
+		font-size: 0.9em;
+	}
+
+	.section
+	{
+		width: 760px;
+		height: 280px;
+		margin-top: -150px;     /* removed 10px to set it a little higher */
+		margin-left: -375px;
+	}
+
+	.photo
+	{
+		width: 280px;
+		height: 280px;
+		background-image: url("../img/me280.png");
+	}
+
+	.text
+	{
+		width: 420px;
+		margin-top: 0px;
+		margin-left: 50px;
+	}
+
+	.title
+	{
+		width: 425px;
+		margin-top: 0px;
+	}
+
+	.description
+	{
+		width: 403px;
+	}
 }
 
 @media screen and (min-width: 681px) and (max-width: 799px)
 {
-    h1
-    {
-	  		font-size: 2.4em;
-    }
+	h1
+	{
+		font-size: 2.4em;
+	}
 
-    h2
-    {
-	  		font-size: 1.4em;
-	  		margin-top: 1em;
-	  		text-align: center;
-    }
+	h2
+	{
+		font-size: 1.4em;
+		margin-top: 1em;
+		text-align: center;
+	}
 
-    h3
-    {
-	  		font-size: 1em;
-	  		text-align: center;
-    }
-    
-    .section
-    {
-        top: 0px;
-        width: 600px;
-        height: 900px;
-        text-align: center;
-        margin-top: 70px;
-        margin-left: -300px;
-    }
-    
-    .photo
-    {
-        float: none;
-    }
-    
-    .text
-    {
-        width: 600px;
-        margin-top: 30px;
-        margin-left: 0px;
-    }
-    
-    .title
-    {
-        width: 480px;
-    }
-    
-    .description
-    {
-        width: 480px;
-        display: inline-block;
-    }
+	h3
+	{
+		font-size: 1em;
+		text-align: center;
+	}
+
+	.section
+	{
+		top: 0px;
+		width: 600px;
+		height: 900px;
+		text-align: center;
+		margin-top: 70px;
+		margin-left: -300px;
+	}
+
+	.photo
+	{
+		float: none;
+		width: 100%;
+	}
+
+	.text
+	{
+		width: 600px;
+		margin-top: 30px;
+		margin-left: 0px;
+	}
+
+	.title
+	{
+		width: 480px;
+	}
+
+	.description
+	{
+		width: 480px;
+		display: inline-block;
+	}
 }
 
 @media screen and (min-width: 461px) and (max-width: 680px)
 {
-    h1
-    {
-	  		font-size: 2.4em;
-    }
+	h1
+	{
+		font-size: 2.4em;
+	}
 
-    h2
-    {
-	  		font-size: 1.1em;
-	  		margin-top: 1em;
-	  		text-align: center;
-    }
+	h2
+	{
+		font-size: 1.1em;
+		margin-top: 1em;
+		text-align: center;
+	}
 
-    h3
-    {
-	  		font-size: 0.8em;
-	  		text-align: center;
-    }
-    
-    .section
-    {
-        top: 0px;
-        width: 420px;
-        height: 670px;
-        text-align: center;
-        margin-top: 50px;
-        margin-left: -210px;
-    }
-    
-    .photo
-    {
-        float: none;
-    }
-    
-    .photo img
-    {
-				content: url("../img/me280.png");
-    }
-    
-    .text
-    {
-        width: 420px;
-        margin-top: 20px;
-        margin-left: 0px;
-    }
-    
-    .title
-    {
-        width: 360px;
-    }
-    
-    .description
-    {
-        width: 360px;
-        display: inline-block;
-    }
-    
-    .contact
-    {
-        margin: 7px;
-    }
+	h3
+	{
+		font-size: 0.8em;
+		text-align: center;
+	}
+
+	.section
+	{
+		top: 0px;
+		width: 420px;
+		height: 670px;
+		text-align: center;
+		margin-top: 50px;
+		margin-left: -210px;
+	}
+
+	.photo
+	{
+		float: none;
+		width: 100%;
+		height: 280px;
+		background-image: url("../img/me280.png");
+	}
+
+	.text
+	{
+		width: 420px;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+
+	.title
+	{
+		width: 360px;
+	}
+
+	.description
+	{
+		width: 360px;
+		display: inline-block;
+	}
+
+	.contact
+	{
+		margin: 7px;
+	}
 }
 
 @media screen and (max-width: 460px)
 {
-    h1
-    {
-	  		font-size: 2.2em;
-    }
-    
-    .section
-    {
-        top: 0px;
-        width: 320px;
-        height: 560px;
-        text-align: center;
-        margin-top: 50px;
-        margin-left: -160px;
-    }
-    
-    .photo
-    {
-        float: none;
-    }
-    
-    .photo img
-    {
-				content: url("../img/me200.png");
-    }
-    
-    .text
-    {
-        width: 320px;
-        margin-top: 20px;
-        margin-left: 0px;
-    }
-    
-    .title
-    {
-        width: 320px;
-    }
-    
-    .description
-    {
-        width: 320px;
-        font-size: 1em;
-        display: inline-block;
-    }
-    
-    .contacts
-    {
-        font-size: 2em;
-    }
-    
-    .contact
-    {
-        margin: 7px;
-    }
+	h1
+	{
+		font-size: 2.2em;
+	}
 
-    [class^="icon-"], [class*=" icon-"]
-    {
-		    height: 32px;
-		    width: 32px;
-		    display: inline-block;
-		    fill: currentColor;
-		}
+	.section
+	{
+		top: 0px;
+		width: 320px;
+		height: 560px;
+		text-align: center;
+		margin-top: 50px;
+		margin-left: -160px;
+	}
+
+	.photo
+	{
+		float: none;
+		width: 100%;
+		height: 200px;
+		background-image: url("../img/me200.png");
+	}
+
+	.text
+	{
+		width: 320px;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+
+	.title
+	{
+		width: 320px;
+	}
+
+	.description
+	{
+		width: 320px;
+		font-size: 1em;
+		display: inline-block;
+	}
+
+	.contacts
+	{
+		font-size: 2em;
+	}
+
+	.contact
+	{
+		margin: 7px;
+	}
+
+	[class^="icon-"], [class*=" icon-"]
+	{
+		height: 32px;
+		width: 32px;
+		display: inline-block;
+		fill: currentColor;
+	}
 }
