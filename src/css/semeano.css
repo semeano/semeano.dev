@@ -44,6 +44,12 @@ h3
     line-height: 1em;
 }
 
+a
+{
+		color: #665;
+		font-weight: bold;
+}
+
 ::selection
 {
 		background-color: #eee;
