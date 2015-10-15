@@ -62,7 +62,9 @@ gulp.task('svg', function () {
 gulp.task('html', function () {
 	return gulp.src('src/*.html')
 		// .pipe(useref())
-		.pipe(minifyhtml())
+		.pipe(minifyhtml({
+			conditionals: true
+		}))
 		.pipe(gulp.dest('dist'));
 });
 
