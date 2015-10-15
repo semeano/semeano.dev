@@ -74,7 +74,7 @@
         var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
       };
       var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-          webkitRequestAnimationFrame || msRequestAnimationFrame;
+          webkitRequestAnimationFrame || msRequestAnimationFrame || undefined;
       if (raf) raf(cb);
       else window.addEventListener('load', cb);
     </script>
