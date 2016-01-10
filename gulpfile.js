@@ -60,15 +60,17 @@ gulp.task('svg', function () {
 
 // HTML
 gulp.task('html', function () {
-	return gulp.src('src/*.html')
+	return gulp.src('src/**/*.html')
 		// .pipe(useref())
-		.pipe(minifyhtml())
+		.pipe(minifyhtml({
+			conditionals: true
+		}))
 		.pipe(gulp.dest('dist'));
 });
 
 // Copy other files
 gulp.task('copy', function () {
-	return gulp.src(['src/favicon.ico', 'src/terms.pdf', 'src/robots.txt', 'src/sitemap.xml'])
+	return gulp.src(['src/**/*.pdf', 'src/favicon.ico', 'src/robots.txt', 'src/sitemap.xml'])
 		.pipe(gulp.dest('dist'));
 });
 
