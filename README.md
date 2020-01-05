@@ -1,9 +1,9 @@
-#semeano.me
+# semeano.me
 
 My personal web page
 
 
-##Copyright & Licence
+## Copyright & Licence
 
 Copyright (c) 2014 Pedro Semeano - Released under The MIT License.
 
