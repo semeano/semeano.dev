@@ -136,7 +136,6 @@ a
 {
   text-align: left;
   margin-top: 40px;
-  margin-bottom: 15px;
 }
 
 .footer a
@@ -250,12 +249,12 @@ a
 
   .contacts
   {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .footer
   {
-    margin-top: 15px;
+    margin: 0;
   }
 }
 
@@ -304,6 +303,7 @@ a
   .title
   {
     width: 480px;
+    text-align: center;
   }
   
   .description
@@ -315,6 +315,7 @@ a
   .footer
   {
     text-align: center;
+    margin-bottom: 15px;
   }
 }
 
@@ -368,6 +369,7 @@ a
   .title
   {
     width: 360px;
+    text-align: center;
   }
   
   .description
@@ -384,6 +386,7 @@ a
   .footer
   {
     text-align: center;
+    margin-bottom: 15px;
   }
 }
 
@@ -424,6 +427,7 @@ a
   .title
   {
     width: 320px;
+    text-align: center;
   }
   
   .description
@@ -454,5 +458,6 @@ a
   .footer
   {
     text-align: center;
+    margin-bottom: 15px;
   }
 }
