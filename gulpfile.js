@@ -1,81 +1,64 @@
-var gulp = require('gulp');
+const { series, parallel, src, dest } = require('gulp')
+const clean = require('gulp-clean')
+const smushit = require('gulp-smushit')
+const minifycss = require('gulp-clean-css')
+const htmlmin = require('gulp-htmlmin')
 
-var del = require('del'),
-	minifycss = require('gulp-minify-css'),
-	concatcss = require('gulp-concat-css'),
-	uglify = require('gulp-uglify'),
-	concat = require('gulp-concat'),
-	// jshint = require('gulp-jshint'),
-	imagemin = require('gulp-imagemin'),
-	// useref = require('gulp-useref'),
-	minifyhtml = require('gulp-minify-html');
+function cleanDist() {
+  return src('dist', { allowEmpty: true })
+		.pipe(clean({ force: true }))
+}
+
+function html(cb) {
+	src('src/index.html')
+		.pipe(htmlmin({ collapseWhitespace: true }))
+		.pipe(dest('dist'))
+	cb()
+}
+
+function css(cb) {
+	src('src/css/*.css')
+		.pipe(minifycss({ specialComments: 0 }))
+		.pipe(dest('dist/css'))
+	cb()
+}
+
+function img(cb) {
+	src('src/img/*.{jpg,png}')
+    .pipe(smushit({ verbose: true }))
+    .pipe(dest('dist/img'))
+	cb()
+}
+
+function font(cb) {
+	src('src/font/*.*')
+		.pipe(dest('dist/font'))
+	cb()
+}
+
+function cv(cb) {
+	src('src/cv/*.*')
+		.pipe(dest('dist/cv'))
+	cb()
+}
+
+function svg(cb) {
+	src('src/svg/*.*')
+		.pipe(dest('dist/svg'))
+	cb()
+}
+
+function terms(cb) {
+	src('src/terms/*.*')
+		.pipe(dest('dist/terms'))
+	cb()
+}
+
+function others(cb) {
+	src('src/*.*')
+		.pipe(dest('dist'))
+	cb()
+}
 
 
-// Clear dist
-gulp.task('clear', function () {
-	return del.sync('dist');
-});
-
-// Fonts
-gulp.task('fonts', function () {
-	return gulp.src('src/font/*.*')
-		.pipe(gulp.dest('dist/font'));
-});
-
-// CSS
-gulp.task('css', ['css-concat'], function () {
-	return gulp.src('temp/css/semeano.min.css')
-		.pipe(minifycss({keepSpecialComments:0}))
-		.pipe(gulp.dest('dist/css'));
-});
-gulp.task('css-concat', function () {
-	return gulp.src('src/css/*.css')
-		.pipe(concatcss('semeano.min.css'))
-		.pipe(gulp.dest('temp/css'));
-});
-
-// JS
-gulp.task('js', function() {
-	// return gulp.src('src/js/*.js')
-	// 	.pipe(jshint())
-	// 	.pipe(jshint.reporter("default"))
-	// 	.pipe(uglify())
-	// 	.pipe(concat('semeano.min.js'))
-	// 	.pipe(gulp.dest('dist/js'));
-});
-
-// Images
-gulp.task('img', function () {
-	return gulp.src('src/img/*.*')
-		.pipe(imagemin())
-		.pipe(gulp.dest('dist/img'));
-});
-
-// SVG
-gulp.task('svg', function () {
-	return gulp.src('src/svg/*.svg')
-		// .pipe(svgmin())
-		.pipe(gulp.dest('dist/svg'));
-});
-
-// HTML
-gulp.task('html', function () {
-	return gulp.src('src/**/*.html')
-		// .pipe(useref())
-		.pipe(minifyhtml({
-			conditionals: true
-		}))
-		.pipe(gulp.dest('dist'));
-});
-
-// Copy other files
-gulp.task('copy', function () {
-	return gulp.src(['src/**/*.pdf', 'src/favicon.ico', 'src/robots.txt', 'src/sitemap.xml'])
-		.pipe(gulp.dest('dist'));
-});
-
-// Default task
-gulp.task('default', ['clear', 'fonts', 'css', 'js', 'img', 'svg', 'html', 'copy'], function () {
-	// Clear temp folder	
-	return del.sync('temp');
-});
+exports.default = series(cleanDist, parallel(html, css, img, font, cv, svg, terms, others))

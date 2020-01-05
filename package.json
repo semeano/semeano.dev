@@ -3,21 +3,13 @@
   "version": "1.0.0",
   "description": "My personal website",
   "main": "gulpfile.js",
-  "dependencies": {
-    "del": "^1.1.1",
-    "gulp-concat": "^2.5.2",
-    "gulp-imagemin": "^2.2.1",
-    "gulp-concat-css": "^2.1.2",
-    "gulp-jshint": "^1.9.4",
-    "gulp-minify-css": "^1.0.0",
-    "gulp-minify-html": "^1.0.1",
-    "gulp-uglify": "^1.1.0",
-    "gulp": "^3.8.11",
-    "gulp-useref": "^1.1.1"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-smushit": "^1.2.0"
   },
   "repository": {
     "type": "git",
