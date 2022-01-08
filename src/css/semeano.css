@@ -3,17 +3,16 @@
  *
  */
 
-@font-face
-{
-  font-family: 'Open Sans';
+@font-face {
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: lighter;
-  src: local('Open Sans Light'), local('OpenSans-Light'), url(../font/semeano.woff) format('woff');
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url(../font/semeano.woff) format("woff");
 }
 
-body
-{
-  font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
   font-size: 100%;
   background-color: #eee;
   margin: 0;
@@ -22,8 +21,7 @@ body
   transition: opacity 1s;
 }
 
-h1
-{
+h1 {
   font-size: 3em;
   font-weight: lighter;
   letter-spacing: -1px;
@@ -32,254 +30,217 @@ h1
   cursor: default;
 }
 
-h2
-{
+h2 {
   font-size: 1.4em;
-    line-height: 1em;
+  line-height: 1em;
 }
 
-h3
-{
+h3 {
   font-size: 1em;
-    line-height: 1em;
+  line-height: 1em;
 }
 
-a
-{
+a {
   color: #665;
   font-weight: bold;
 }
 
-::selection
-{
+::selection {
   background-color: #eee;
 }
 
-.section
-{
+.section {
   width: 1110px;
   height: 480px;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -260px;     /* removed 20px to set it a little higher */
+  margin-top: -260px; /* removed 20px to set it a little higher */
   margin-left: -555px;
 }
 
-.photo
-{
+.photo {
   float: left;
 }
 
-.photo img
-{
+.photo img {
   content: url("../img/me.png");
+  width: 480px;
+  height: 480px;
 }
 
-.text
-{
+.text {
   float: left;
   width: 530px;
   margin-top: 30px;
   margin-left: 100px;
 }
 
-.title
-{
+.title {
   width: 530px;
   display: inline-block;
   text-align: left;
 }
 
-.description
-{
+.description {
   width: 530px;
   text-align: left;
   margin-top: 20px;
 }
 
-.contacts
-{
+.contacts {
   margin-top: 40px;
   display: inline-block;
   font-size: 3em;
 }
 
-.contacts a
-{
+.contacts a {
   color: #888;
   transition: color ease 0.3s;
 }
 
-.contacts a:hover
-{
+.contacts a:hover {
   color: #444;
 }
 
-.contact
-{
+.contact {
   display: table;
   float: left;
   margin: 8px;
   cursor: pointer;
 }
 
-[class^="icon-"], [class*=" icon-"]
-{
+[class^="icon-"],
+[class*=" icon-"] {
   height: 50px;
   width: 50px;
   display: inline-block;
   fill: currentColor;
 }
 
-.footer
-{
+.footer {
   text-align: left;
   margin-top: 40px;
 }
 
-.footer a
-{
+.footer a {
   font-size: 0.7em;
   text-decoration: none;
 }
-
-
 
 /*
  * Media queries
  *
  */
 
-@media screen and (min-width: 1025px) and (max-width: 1280px)
-{
-  h1
-  {
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  h1 {
     font-size: 2.2em;
     line-height: 1.2em;
   }
 
-  h2
-  {
+  h2 {
     font-size: 1.2em;
   }
 
-  h3
-  {
+  h3 {
     font-size: 0.9em;
   }
-  
-  .section
-  {
+
+  .section {
     width: 890px;
     height: 380px;
-    margin-top: -210px;     /* removed 20px to set it a little higher */
+    margin-top: -210px; /* removed 20px to set it a little higher */
     margin-left: -445px;
   }
-  
-  .photo img
-  {
+
+  .photo img {
     content: url("../img/me380.png");
+    width: 380px;
+    height: 380px;
   }
-  
-  .text
-  {
+
+  .text {
     width: 450px;
     margin-top: 20px;
     margin-left: 60px;
   }
-  
-  .title
-  {
+
+  .title {
     width: 450px;
   }
 
-  .footer
-  {
+  .footer {
     margin-top: 30px;
   }
 }
 
-@media screen and (min-width: 800px) and (max-width: 1024px)
-{
-  h1
-  {
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  h1 {
     font-size: 2.1em;
   }
 
-  h2
-  {
+  h2 {
     font-size: 1.1em;
   }
 
-  h3
-  {
+  h3 {
     font-size: 0.9em;
   }
-  
-  .section
-  {
+
+  .section {
     width: 760px;
     height: 280px;
-    margin-top: -150px;     /* removed 10px to set it a little higher */
+    margin-top: -150px; /* removed 10px to set it a little higher */
     margin-left: -375px;
   }
-  
-  .photo img
-  {
+
+  .photo img {
     content: url("../img/me280.png");
+    width: 280px;
+    height: 280px;
   }
-  
-  .text
-  {
+
+  .text {
     width: 420px;
     margin-top: 0px;
     margin-left: 50px;
   }
-  
-  .title
-  {
+
+  .title {
     width: 425px;
   }
-  
-  .description
-  {
+
+  .description {
     width: 403px;
   }
 
-  .contacts
-  {
+  .contacts {
     margin-top: 20px;
   }
 
-  .footer
-  {
+  .footer {
     margin: 0;
   }
 }
 
-@media screen and (min-width: 681px) and (max-width: 799px)
-{
-  h1
-  {
+@media screen and (min-width: 681px) and (max-width: 799px) {
+  h1 {
     font-size: 2.4em;
   }
 
-  h2
-  {
+  h2 {
     font-size: 1.4em;
     margin-top: 1em;
     text-align: center;
   }
 
-  h3
-  {
+  h3 {
     font-size: 1em;
     text-align: center;
   }
-  
-  .section
-  {
+
+  .section {
     top: 0px;
     width: 600px;
     height: 900px;
@@ -287,60 +248,50 @@ a
     margin-top: 70px;
     margin-left: -300px;
   }
-  
-  .photo
-  {
+
+  .photo {
     float: none;
   }
-  
-  .text
-  {
+
+  .text {
     width: 600px;
     margin-top: 30px;
     margin-left: 0px;
   }
-  
-  .title
-  {
+
+  .title {
     width: 480px;
     text-align: center;
   }
-  
-  .description
-  {
+
+  .description {
     width: 480px;
     display: inline-block;
   }
 
-  .footer
-  {
+  .footer {
     text-align: center;
     margin-bottom: 15px;
   }
 }
 
-@media screen and (min-width: 461px) and (max-width: 680px)
-{
-  h1
-  {
+@media screen and (min-width: 461px) and (max-width: 680px) {
+  h1 {
     font-size: 2.4em;
   }
 
-  h2
-  {
+  h2 {
     font-size: 1.1em;
     margin-top: 1em;
     text-align: center;
   }
 
-  h3
-  {
+  h3 {
     font-size: 0.8em;
     text-align: center;
   }
-  
-  .section
-  {
+
+  .section {
     top: 0px;
     width: 420px;
     height: 670px;
@@ -348,57 +299,49 @@ a
     margin-top: 50px;
     margin-left: -210px;
   }
-  
-  .photo
-  {
+
+  .photo {
     float: none;
   }
-  
-  .photo img
-  {
+
+  .photo img {
     content: url("../img/me280.png");
+    width: 280px;
+    height: 280px;
   }
-  
-  .text
-  {
+
+  .text {
     width: 420px;
     margin-top: 20px;
     margin-left: 0px;
   }
-  
-  .title
-  {
+
+  .title {
     width: 360px;
     text-align: center;
   }
-  
-  .description
-  {
+
+  .description {
     width: 360px;
     display: inline-block;
   }
-  
-  .contact
-  {
+
+  .contact {
     margin: 7px;
   }
 
-  .footer
-  {
+  .footer {
     text-align: center;
     margin-bottom: 15px;
   }
 }
 
-@media screen and (max-width: 460px)
-{
-  h1
-  {
+@media screen and (max-width: 460px) {
+  h1 {
     font-size: 2.2em;
   }
-  
-  .section
-  {
+
+  .section {
     top: 0px;
     width: 320px;
     height: 560px;
@@ -406,57 +349,51 @@ a
     margin-top: 50px;
     margin-left: -160px;
   }
-  
-  .photo
-  {
+
+  .photo {
     float: none;
   }
-  
-  .photo img
-  {
+
+  .photo img {
     content: url("../img/me200.png");
+    width: 200px;
+    height: 200px;
   }
-  
-  .text
-  {
+
+  .text {
     width: 320px;
     margin-top: 20px;
     margin-left: 0px;
   }
-  
-  .title
-  {
+
+  .title {
     width: 320px;
     text-align: center;
   }
-  
-  .description
-  {
+
+  .description {
     width: 320px;
     font-size: 1em;
     display: inline-block;
   }
-  
-  .contacts
-  {
+
+  .contacts {
     font-size: 2em;
   }
-  
-  .contact
-  {
+
+  .contact {
     margin: 7px;
   }
 
-  [class^="icon-"], [class*=" icon-"]
-  {
+  [class^="icon-"],
+  [class*=" icon-"] {
     height: 32px;
     width: 32px;
     display: inline-block;
     fill: currentColor;
   }
 
-  .footer
-  {
+  .footer {
     text-align: center;
     margin-bottom: 15px;
   }
