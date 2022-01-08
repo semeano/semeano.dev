@@ -1,19 +1,18 @@
 {
-  "name": "semeano.me",
+  "name": "semeano.dev",
   "version": "1.0.0",
   "description": "My personal website",
   "main": "gulpfile.js",
-  "dependencies": {},
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-clean-css": "^4.2.0",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-smushit": "^1.2.0"
+    "gulp": "4.0.2",
+    "gulp-clean": "0.4.0",
+    "gulp-clean-css": "4.3.0",
+    "gulp-htmlmin": "5.0.1",
+    "gulp-smushit": "1.2.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/semeano/semeano.me.git"
+    "url": "https://github.com/semeano/semeano.dev.git"
   },
   "keywords": [
     "semeano"
@@ -21,7 +20,7 @@
   "author": "Pedro Semeano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/semeano/semeano.me/issues"
+    "url": "https://github.com/semeano/semeano.dev/issues"
   },
-  "homepage": "https://github.com/semeano/semeano.me"
+  "homepage": "https://github.com/semeano/semeano.dev"
 }
