@@ -61,10 +61,7 @@ a {
 
 .photo {
   float: left;
-}
-
-.photo img {
-  content: url("../img/me.png");
+  background-image: url("../img/me.png");
   width: 480px;
   height: 480px;
 }
@@ -154,7 +151,7 @@ a {
     margin-left: -445px;
   }
 
-  .photo img {
+  .photo {
     content: url("../img/me380.png");
     width: 380px;
     height: 380px;
@@ -195,7 +192,7 @@ a {
     margin-left: -375px;
   }
 
-  .photo img {
+  .photo {
     content: url("../img/me280.png");
     width: 280px;
     height: 280px;
@@ -302,9 +299,6 @@ a {
 
   .photo {
     float: none;
-  }
-
-  .photo img {
     content: url("../img/me280.png");
     width: 280px;
     height: 280px;
@@ -352,9 +346,6 @@ a {
 
   .photo {
     float: none;
-  }
-
-  .photo img {
     content: url("../img/me200.png");
     width: 200px;
     height: 200px;
