@@ -152,7 +152,7 @@ a {
   }
 
   .photo {
-    content: url("../img/me380.png");
+    background-image: url("../img/me380.png");
     width: 380px;
     height: 380px;
   }
@@ -193,7 +193,7 @@ a {
   }
 
   .photo {
-    content: url("../img/me280.png");
+    background-image: url("../img/me280.png");
     width: 280px;
     height: 280px;
   }
@@ -299,7 +299,7 @@ a {
 
   .photo {
     float: none;
-    content: url("../img/me280.png");
+    background-image: url("../img/me280.png");
     width: 280px;
     height: 280px;
   }
@@ -346,7 +346,7 @@ a {
 
   .photo {
     float: none;
-    content: url("../img/me200.png");
+    background-image: url("../img/me200.png");
     width: 200px;
     height: 200px;
   }
