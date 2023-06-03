@@ -248,6 +248,7 @@ a {
 
   .photo {
     float: none;
+    margin: 0 auto;
   }
 
   .text {
@@ -299,6 +300,7 @@ a {
 
   .photo {
     float: none;
+    margin: 0 auto;
     background-image: url("../img/me280.png");
     width: 280px;
     height: 280px;
@@ -346,6 +348,7 @@ a {
 
   .photo {
     float: none;
+    margin: 0 auto;
     background-image: url("../img/me200.png");
     width: 200px;
     height: 200px;
