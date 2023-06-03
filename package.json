@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "My personal website",
   "main": "gulpfile.js",
+  "scripts": {
+    "start": "http-server dist",
+    "build": "gulp"
+  },
   "devDependencies": {
     "gulp": "4.0.2",
     "gulp-clean": "0.4.0",
     "gulp-clean-css": "4.3.0",
     "gulp-htmlmin": "5.0.1",
-    "gulp-smushit": "1.2.0"
+    "gulp-smushit": "1.2.0",
+    "http-server": "^14.1.1"
   },
   "repository": {
     "type": "git",
