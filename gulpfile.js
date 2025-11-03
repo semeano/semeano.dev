@@ -23,9 +23,11 @@ function css(cb) {
 }
 
 function img(cb) {
-  src("src/img/*.{jpg,png}")
-    .pipe(smushit({ verbose: true }))
-    .pipe(dest("dist/img"));
+  // gulp-smushit stopped working...
+  // src("src/img/*.{jpg,png}")
+  //   .pipe(smushit({ verbose: true }))
+  //   .pipe(dest("dist/img"));
+  src("src/img/dist/*.*").pipe(dest("dist/img"));
   cb();
 }
 
